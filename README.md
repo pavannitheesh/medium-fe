@@ -3,7 +3,7 @@
 This project is a clone of Medium, a platform for publishing articles and engaging with readers. It leverages modern technologies such as **React.js** for the frontend, **Cloudflare Workers** for the backend, and various other tools and libraries to create a seamless user experience.
 
 ## 🌍 Live Demo
-Check out the website [here](https://medium-fe-seven.vercel.app).
+Check out the website [here](https://medium-fe-psi.vercel.app).
 
 ## 🚀 Technologies Used
 
