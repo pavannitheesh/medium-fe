@@ -1,2 +1,2 @@
-const BACKEND_URL="http://127.0.0.1:8787";
+const BACKEND_URL="https://my-app.pav-aqws.workers.dev";
 export default BACKEND_URL;
