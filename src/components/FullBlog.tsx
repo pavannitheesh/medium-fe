@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Blog } from "../hooks";
 import Avatar from "./Avatar";
 import ShareBtn from "./ShareBtn";
-import Preview from "./preview";
+import Preview from "./Preview";
 
 export const FullBlog = ({ blog }: { blog: Blog }) => {
 	return (
