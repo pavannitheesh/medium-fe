@@ -6,13 +6,13 @@ interface Quote {
 }
 
 export default function Quote() {
-	const [quote, setQuote] = useState<Quote>();
+	const [quote, setQuote] = useState<Quote | null>();
 
 	useEffect(() => {
 		const fetchQuote = async () => {
 			try {
 				const randomQuote = await useRandomQuote();
-				setQuote(randomQuote);
+				if (randomQuote) setQuote(randomQuote);
 			} catch (error) {
 				console.error("Error fetching quote:", error);
 			}
