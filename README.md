@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+# Medium Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a clone of Medium, a platform for publishing articles and engaging with readers. It leverages modern technologies such as **React.js** for the frontend, **Cloudflare Workers** for the backend, and various other tools and libraries to create a seamless user experience.
 
-Currently, two official plugins are available:
+## 🌍 Live Demo
+Check out the website [here](https://medium-fe-seven.vercel.app).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Technologies Used
 
-## Expanding the ESLint configuration
+### Frontend
+- **React.js** – For building the user interface.
+- **TypeScript** – Enhances code quality and type safety.
+- **Zod** – For data validation.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Backend
+- **Cloudflare Workers** – Ensures low latency and high performance globally.
+- **JWT (JSON Web Tokens)** – Secure user authentication.
 
-- Configure the top-level `parserOptions` property like this:
+### Database
+- **PostgreSQL** – Reliable and scalable database.
+- **Prisma** – ORM tool for efficient database interaction.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📌 Features
+✅ **User Authentication** – Secure authentication using JWT tokens.  
+✅ **Article Management** – Publish and edit articles with Markdown support.  
+✅ **User Profiles** – View and manage user profiles, including authored articles.  
+✅ **Blogging Experience** – Write and publish blogs in Markdown format.  
+✅ **Social Interaction** – View and explore other users' profiles.  
+✅ **Publish Control** – Articles can only be published when ready.  
+
+## 🛠 Getting Started
+Follow these steps to set up the project locally:
+
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/pavannitheesh/medium-fe
+cd medium-fe
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### 2️⃣ Install Dependencies
+```sh
+npm install
 ```
+
+### 3️⃣ Configure Database
+- Set up **PostgreSQL** on your machine or use a cloud provider.
+- Update the connection settings in the Prisma configuration file (`.env`).
+
+### 4️⃣ Run Database Migrations
+```sh
+npx prisma migrate dev
+```
+
+### 5️⃣ Start the Development Servers
+```sh
+npm run dev
+```
+
+
